@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
+import { Nav } from "./Navbar.style";
 
 const Navbar = () => {
   return (
-    <div>
-      <a to="/">
+    <Nav justify="space-between">
+      <Link to="/">
         <i>{"Feyza"}</i>
         <span>Recipe</span>
-      </a>
+      </Link>
       <ul>
         <Link to="/">Home</Link>
         <Link to="about">about</Link>
         <Link to="register">Register</Link>
         <Link to="logout">Logout</Link>
       </ul>
-    </div>
+    </Nav>
   );
 };
 
