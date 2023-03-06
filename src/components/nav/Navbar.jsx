@@ -1,19 +1,20 @@
 import { Link } from "react-router-dom";
-import { Nav } from "./Navbar.style";
+import { Brand, Menu, Nav } from "./Navbar.style";
 
 const Navbar = () => {
   return (
-    <Nav justify="space-between">
-      <Link to="/">
+    <Nav justify="space-between" wrap="wrap">
+      <Brand to="/">
         <i>{"Feyza"}</i>
         <span>Recipe</span>
-      </Link>
-      <ul>
+      </Brand>
+
+      <Menu>
         <Link to="/">Home</Link>
-        <Link to="about">about</Link>
+        <Link to="about">About</Link>
         <Link to="register">Register</Link>
         <Link to="logout">Logout</Link>
-      </ul>
+      </Menu>
     </Nav>
   );
 };
